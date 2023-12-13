@@ -1,5 +1,5 @@
 {
-  "name": "blog-user-frontend",
+  "name": "blog-user-frontend/home-feed",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
