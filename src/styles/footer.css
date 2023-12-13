@@ -1,0 +1,27 @@
+:root{
+    --verylight: #cad2c5;
+    --light: #84a98c;
+    --medium: #52796f;
+    --dark: #354f52;
+    --verydark: #2f3e46;
+ }
+
+.footer-container{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100vw;
+    background-color: var(--dark);
+}
+
+.name-container{
+    color: var(--verylight);
+    padding-right: 5px;
+}
+
+.git-container{
+    color: var(--verylight);
+    padding-left: 5px;
+}

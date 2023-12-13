@@ -1,0 +1,40 @@
+:root{
+   --verylight: #cad2c5;
+   --light: #84a98c;
+   --medium: #52796f;
+   --dark: #354f52;
+   --verydark: #2f3e46;
+}
+
+
+.header-container{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100vw;
+    background-color: var(--light);
+}
+
+.title-container{
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-left: 10px;
+    color: var(--verydark);
+    font-size: xx-large;
+}
+
+.logsign-container{
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-right: 50px;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: var(--verylight);
+    color: var(--verydark);
+    font-size: larger;
+}
