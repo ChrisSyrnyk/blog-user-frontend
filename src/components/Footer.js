@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import gitIcon from '../img/github.svg'
 
 class Footer extends Component{
     constructor(props){
@@ -16,11 +17,15 @@ class Footer extends Component{
             <>
                 <div className='footer-container'>
                      <div className='center'>
-                        <div className='name-container'
+                        <div className='name-container center'
                         onClick={()=>this.openInNewTab('https://christophersyrnyk.dev')}
-                        >Christopher Syrnyk
+                        >
+                            Christopher Syrnyk
                         </div>
-                        <div className='git-container'>git</div>
+                        <img src = {gitIcon} 
+                        className='git-container'
+                        onClick={()=>this.openInNewTab('https://github.com/ChrisSyrnyk')}
+                        />
                     </div>
                 </div>
             </>
