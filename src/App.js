@@ -12,14 +12,15 @@ function App() {
   return (
     <>
       
-
+      {/* Body component */}
       <div className='body-container'>
         <div className='top-blogs'>
           <div className='center'>
             <div className='top-blogs-container'>
-              <div className='center top-blogs-title'>Top Blogs</div>
-              <div className='line'></div>
-              <div className='blog-card-container'>
+              <div className='center blogs-title'>Top Blogs</div>
+              <div className='line'/>
+              <div className='blog-card-container center'>
+                {/* Blog card component */}
                 <div className='blog-card'></div>
                 <div className='blog-card'></div>
                 <div className='blog-card'></div>
@@ -27,7 +28,34 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='all-blogs'></div>
+        <div className='all-blogs'>
+          <div className='center'>
+            <div className='all-blogs-container'>
+              <div className='center blogs-title'>All Blogs</div>
+              <div className='line'/>
+              <div className='blog-card-container center'>
+                <div className='allblogs-card'></div>
+                <div className='allblogs-card'></div>
+                <div className='allblogs-card'></div>
+              </div>
+              <div className='blog-card-container center'>
+                <div className='allblogs-card'></div>
+                <div className='allblogs-card'></div>
+                <div className='allblogs-card'></div>
+              </div>
+              <div className='blog-card-container center'>
+                <div className='allblogs-card'></div>
+                <div className='allblogs-card'></div>
+                <div className='allblogs-card'></div>
+              </div>
+              <div className='blog-card-container center'>
+                <div className='allblogs-card'></div>
+                <div className='allblogs-card'></div>
+                <div className='allblogs-card'></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/*Header section*/}
