@@ -4,6 +4,7 @@
     --medium: #52796f;
     --dark: #354f52;
     --verydark: #2f3e46;
+    --minwidth: 800px;
  }
 
 .footer-container{
@@ -12,7 +13,7 @@
     bottom: 0;
     left: 0;
     height: 60px;
-    width: 100vw;
+    width: max(100vw, var(--minwidth));
     background-color: var(--dark);
 }
 

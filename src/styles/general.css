@@ -4,6 +4,8 @@
     --medium: #52796f;
     --dark: #354f52;
     --verydark: #2f3e46;
+
+    background-color: var(--verylight);
 }
 
 .center{

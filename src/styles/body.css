@@ -4,6 +4,7 @@
     --medium: #52796f;
     --dark: #354f52;
     --verydark: #2f3e46;
+    --minwidth: 800px;
  }
 
 .body-container{
@@ -12,54 +13,51 @@
     flex-direction: column;
     top: 60px;
     left: 0;
-    width: 100vw;
+    width: max(100vw, var(--minwidth));
     height: auto;
-    background-color: var(--verylight);
 }
 
 .top-blogs{
     position: relative;
     display: flex;
-    height: calc(100vh - 120px);
-    width: 100vw;
-    background-color: var(--verylight);
+    height: max(calc(100vh - 120px), 500px);
+    width: max(100vw, var(--minwidth));
 }
 
 .all-blogs{
     position: relative;
     display: flex;
-    height: calc(100vh - 120px);
-    width: 100vw;
-    background-color: var(--verylight);
+    height: 1000px;
+    width: max(100vw, var(--minwidth));
 }
 
 .top-blogs-container{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 40vh;
-    width: 90vw;
-    background-color: var(--verylight);
+    height: max(40vh, 300px);
+    width: max(100vw, var(--minwidth));
 }
 
-.top-blogs-title{
+.blogs-title{
     font-size: x-large;
 }
 
 .blog-card-container{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     height: 90%;
-    background-color: var(--verylight);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .blog-card{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 90%;
+    min-width: min(30%, 350px);
+    height: min(90%, 300px);
     margin: auto;
     background-color: var(--medium);
 }
@@ -74,3 +72,24 @@
     margin-bottom: 5px;
     background-color: var(--light);
 }
+
+.all-blogs-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    height: auto;
+    width: max(100vw, var(--minwidth));
+}
+
+.allblogs-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: min(30%, 350px);
+    min-height: 200px;
+    height: min(90%, 300px);
+    margin: auto;
+    background-color: var(--medium);
+}
+
