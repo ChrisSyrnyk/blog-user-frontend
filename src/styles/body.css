@@ -41,6 +41,7 @@
 
 .blogs-title{
     font-size: x-large;
+    font-weight: bold;
 }
 
 .blog-card-container{
@@ -59,7 +60,6 @@
     min-width: min(30%, 350px);
     height: min(90%, 300px);
     margin: auto;
-    background-color: var(--medium);
 }
 
 .line{
@@ -71,7 +71,7 @@
     margin: auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: var(--light);
+    background-color: var(--medium);
 }
 
 .all-blogs-container{

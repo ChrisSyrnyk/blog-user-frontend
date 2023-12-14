@@ -1,0 +1,30 @@
+:root{
+    --verylight: #cad2c5;
+    --light: #84a98c;
+    --medium: #52796f;
+    --dark: #354f52;
+    --verydark: #2f3e46;
+    --minwidth: 800px;
+}
+
+.blog-title{
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: larger;
+    color: var(--dark);
+    font-weight: 900;
+}
+
+.blog-content{
+    max-width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 70%;
+    overflow: hidden;
+    color: var(--dark);
+}
+
+.blog-info{
+ margin-top: 5px;
+ margin-left: 5px;
+}
