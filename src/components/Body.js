@@ -11,7 +11,7 @@ class Body extends Component{
         return(
             <>
                 <div className='body-container'>
-                    <Top/>
+                    <Top allBlogs = {this.props.allBlogs}/>
                     <All/>
                 </div>
             </>

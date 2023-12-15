@@ -6,18 +6,28 @@ class BlogCardContainer extends Component{
         super(props)
     }
 
+
     render(){
-        return(
-            <>
-                <div className='blog-card-container center'>
-                    {/* Blog card component */}
-                    <BlogCard cardtype = {this.props.cardtype}/>
-                    <BlogCard cardtype = {this.props.cardtype}/>
-                    <BlogCard cardtype = {this.props.cardtype}/>
-                </div>
-            </>
+            if(this.props.Blogs){
+            return(
+                <>
+                    
+                    
                         
-        )
+                            <div className='blog-card-container center'>
+                                {/* Blog card component */}
+                                <BlogCard 
+                                cardtype = {this.props.cardtype}
+                                blogs = {this.props.Blogs}
+                                />
+                            </div>
+                        
+                    
+        
+                </>
+                            
+            )
+            }
     }
 }
 
