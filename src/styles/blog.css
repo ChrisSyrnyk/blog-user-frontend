@@ -1,0 +1,47 @@
+.post-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10vh;
+    
+}
+
+
+.postContent{
+    
+    max-width: 90%;
+    margin: auto;
+}
+
+.postInfo{
+    
+    margin: auto;
+    margin-left: 3%;
+}
+
+.comments-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+}
+
+.comment-card{
+    width: 50vw;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.commentContent{
+    max-width: 90%;
+    width: fit-content;
+    margin: auto;
+}
+
+.commentInfo{
+    margin-left: 3%;
+}
+

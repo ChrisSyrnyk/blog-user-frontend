@@ -8,7 +8,7 @@ const RouteSwitch = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/home-feed" element={<App />} />
-        <Route path="/blog-post" element={<BlogPost />} />
+        <Route path="/blog-post/:postid" element={<BlogPost />} />
       </Routes>
     </BrowserRouter>
   );

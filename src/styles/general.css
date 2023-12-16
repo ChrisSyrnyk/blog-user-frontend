@@ -17,3 +17,9 @@
 .rounded{
     border-radius: 5px;
 }
+
+.button{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}

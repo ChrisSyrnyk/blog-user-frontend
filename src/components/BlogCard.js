@@ -19,9 +19,9 @@ const BlogCard = (props) =>{
                             <div 
                             key = {blog._id}
                             className='blog-card'>
-                                <div className='center blog-title'
-                                onClick={()=>(console.log('clicked ' + blog._id))}
-                                >{blog.title}</div>
+                                <a className='center blog-title'
+                                href = {"/blog-post/" + blog._id}
+                                >{blog.title}</a>
                                 <div className = 'line'/>
                                 <div className='center blog-content'>{blog.content}</div>
                                 <div className='blog-info'>

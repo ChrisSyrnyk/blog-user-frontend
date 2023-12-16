@@ -11,9 +11,12 @@ class Header extends Component{
         return(
             <>
                 <div className='header-container'>
-                    <div className='title-container'>
+                    <a 
+                    href = '/home-feed'
+                    className='title-container'
+                    >
                         The Best Blogs
-                    </div>
+                    </a>
                     <div className='logsign-container rounded'>
                         <div>Login</div>
                     </div>

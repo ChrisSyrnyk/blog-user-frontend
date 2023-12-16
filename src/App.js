@@ -5,6 +5,7 @@ import footerstyles from './styles/footer.css'
 import bodystyles from './styles/body.css'
 import generalstyles from './styles/general.css'
 import blogcardstyles from './styles/blogcard.css'
+import blogstyles from './styles/blog.css';
 //import { Link } from "react-router-dom";
 
 import Header from './components/Header';
