@@ -7,33 +7,31 @@ class Top extends Component{
     }
 
 
-    getTopBlogs(allBlogs){
-        //this is where i will filter blogs by most comments and return top 3
-        /*
-        const topBlogs= null;
-        allBlogs.forEach(blog => {
-            console.log(blog);
-        });
-        */
-       console.log(allBlogs)
-        return allBlogs;
-    }
+    
     
 
     render(){
-        return(
-            <>
-                <div className='top-blogs'>
-                    <div className='center'>
-                        <div className='top-blogs-container'>
-                            <div className='center blogs-title'>Top Blogs</div>
-                            <div className='line'/>
-                            <BlogCardContainer cardtype = {'topcard'} Blogs = {this.props.allBlogs}/>
+        if(this.props.allBlogs){
+            return(
+                <>
+                    <div className='top-blogs'>
+                        <div className='center'>
+                            <div className='top-blogs-container'>
+                                <div className='center blogs-title'>Most Recent Blogs</div>
+                                <div className='line'/>
+                                <BlogCardContainer cardtype = {'topcard'} Blogs = {
+                                    this.props.allBlogs.sort((a, b) => {
+                                        if(a.created > b.created){
+                                            return -1
+                                        }
+                                    }).slice(0,3)
+                                }/>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </>
-        )
+                </>
+            )
+        }
     }
 }
 

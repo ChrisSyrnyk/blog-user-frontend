@@ -12,7 +12,7 @@ class Body extends Component{
             <>
                 <div className='body-container'>
                     <Top allBlogs = {this.props.allBlogs}/>
-                    <All/>
+                    <All allBlogs = {this.props.allBlogs}/>
                 </div>
             </>
         )

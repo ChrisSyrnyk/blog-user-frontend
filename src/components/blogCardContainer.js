@@ -11,19 +11,13 @@ class BlogCardContainer extends Component{
             if(this.props.Blogs){
             return(
                 <>
-                    
-                    
-                        
-                            <div className='blog-card-container center'>
-                                {/* Blog card component */}
-                                <BlogCard 
-                                cardtype = {this.props.cardtype}
-                                blogs = {this.props.Blogs}
-                                />
-                            </div>
-                        
-                    
-        
+                    <div className='blog-card-container center'>
+                        {/* Blog card component */}
+                        <BlogCard 
+                        cardtype = {this.props.cardtype}
+                        blogs = {this.props.Blogs}
+                        />
+                    </div>
                 </>
                             
             )
