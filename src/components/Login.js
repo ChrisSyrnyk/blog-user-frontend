@@ -1,6 +1,17 @@
+import { useState } from "react";
+import Signup from "./Signup";
 
 const Login = (props) => {
     
+    const [signupToggle, setSignupToggle] = useState(null);
+
+    function toggleSignup(){
+      if(signupToggle === false){
+        setSignupToggle(true);
+      } else {
+        setSignupToggle(false);
+      }
+    }
 
     async function login(){
         fetch('http://localhost:4000/login', {
@@ -29,28 +40,7 @@ const Login = (props) => {
         })
     }
 
-    async function signup(){
-        fetch('http://localhost:4000/signup', {
-          method: "POST",
-          mode: "cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            "username": document.getElementById('signup-username').value,
-            "password": document.getElementById('signup-password').value,
-            "type": "user",
-          })
-        })
-        .then((response) => response.json())
-        .then((response) => {
-          if(response.message){
-            console.log('User already exists'); 
-          } else {
-            console.log('account created');
-          }
-        })
-    }
+    
 
     
     if (props.login){
@@ -59,7 +49,13 @@ const Login = (props) => {
                 <div className='dropdown-container'>
                     <div className='login-form rounded'>
                     <div className="logsign-title">Login to your account</div>
-                    <div className="signup-info">Don't have an account? Signup</div>
+                    <div className="flexrow">
+                      <div className="signup-info">Don't have an account?</div>
+                      <div 
+                      onClick={()=> toggleSignup()}
+                      className="signup-info signup-button"
+                      >Sign Up</div>
+                    </div>
                     <div className="logsign-form center">
                         <label className="signup-info" htmlFor="username">Username </label>
                         <input className="logsign-input rounded" type="text" id="username" name="username"/>
@@ -71,20 +67,9 @@ const Login = (props) => {
                     onClick={()=> login()}
                     >Login</button>
                     </div>
-                    <div className='login-form rounded'>
-                      <div className="logsign-title">Signup</div>
-                    <div className="logsign-form center">
-                        <label className="signup-info" htmlFor="signup-username">Username: </label>
-                        <input className="logsign-input rounded" type="text" id="signup-username" name="username"/>
-                        <label className= "signup-info" htmlFor="signup-password">Password: </label>
-                        <input  className="logsign-input rounded" type="password" id="signup-password" name="password"/> 
-                    </div>
-                    <button
-                    className="form-button rounded"
-                    onClick={()=> signup()}
-                    >Signup</button>
-                    </div>
-                    
+
+                    <Signup signup = {signupToggle} toggleSignup = {toggleSignup}/>
+
                     <button 
                     onClick={()=>console.log(localStorage.getItem("token"))}
                     className='input'
@@ -92,6 +77,8 @@ const Login = (props) => {
                     <button
                     onClick={()=>localStorage.removeItem("token")}
                     >remove token</button>
+
+                    
                 </div>
             </>
         )
