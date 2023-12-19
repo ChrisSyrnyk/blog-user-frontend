@@ -1,5 +1,6 @@
 import React, {Component, useState} from 'react';
 import Comment from '../components/Comment';
+import PostComment from './PostComment';
 
 const SingleBlog = (props) =>{
     
@@ -34,9 +35,12 @@ const SingleBlog = (props) =>{
                             <div className='postInfo'>{blogPost.user.username}</div>
                             <div className='postInfo'>{convertDate(blogPost.created)}</div>
                         </div>
+                        
                         <div className='comments-container'>
                             <Comment comments = {Comments}/>
+                            <PostComment user = {blogPost.user.username} blogPostId = {blogPostId}/>
                         </div>
+                        
                     </div>
                 </>
             
