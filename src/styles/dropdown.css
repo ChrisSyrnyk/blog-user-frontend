@@ -56,6 +56,15 @@
     user-select: none;
 }
 
+.signup-button{
+    color: blue;
+}
+
+.signup-button:active{
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+}
+
 .logsign-form{
     position: relative;
     display: flex;

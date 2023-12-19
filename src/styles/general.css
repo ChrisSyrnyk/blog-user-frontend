@@ -26,3 +26,8 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
