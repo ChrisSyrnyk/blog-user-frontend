@@ -21,6 +21,8 @@ const Login = (props) => {
           }
           console.log(response);
           localStorage.setItem("token", response.token);
+          document.getElementById('username').value = null;
+          document.getElementById('password').value = null;
         })
     }
 
@@ -40,7 +42,7 @@ const Login = (props) => {
         .then((response) => response.json())
         .then((response) => {
           if(response.message){
-            console.log('User already exists');
+            console.log('User already exists'); 
           } else {
             console.log('account created');
           }
@@ -52,27 +54,32 @@ const Login = (props) => {
         return(
             <>
                 <div className='dropdown-container'>
-                    <div className='login-form'>
-                    <form>
-                        <label className="input" htmlFor="username">Username: </label>
-                        <input className="input" type="text" id="username" name="username"/>
-                        <label className= "input" htmlFor="password">Password: </label>
-                        <input  className="input" type="password" id="password" name="password"/> 
-                    </form>
-                    <button
-                    onClick={()=> login()}
-                    >test login</button>
+                    <div className='login-form rounded'>
+                    <div className="logsign-title">Login to your account</div>
+                    <div className="signup-info">Don't have an account? Signup</div>
+                    <div className="logsign-form center">
+                        <label className="signup-info" htmlFor="username">Username </label>
+                        <input className="logsign-input rounded" type="text" id="username" name="username"/>
+                        <label className= "signup-info" htmlFor="password">Password: </label>
+                        <input  className="logsign-input rounded" type="password" id="password" name="password"/> 
                     </div>
-                    <div className='login-form'>
-                    <form>
-                        <label className="input" htmlFor="signup-username">Username: </label>
-                        <input className="input" type="text" id="signup-username" name="username"/>
-                        <label className= "input" htmlFor="signup-password">Password: </label>
-                        <input  className="input" type="password" id="signup-password" name="password"/> 
-                    </form>
                     <button
+                    className="form-button rounded"
+                    onClick={()=> login()}
+                    >Login</button>
+                    </div>
+                    <div className='login-form rounded'>
+                      <div className="logsign-title">Signup</div>
+                    <div className="logsign-form center">
+                        <label className="signup-info" htmlFor="signup-username">Username: </label>
+                        <input className="logsign-input rounded" type="text" id="signup-username" name="username"/>
+                        <label className= "signup-info" htmlFor="signup-password">Password: </label>
+                        <input  className="logsign-input rounded" type="password" id="signup-password" name="password"/> 
+                    </div>
+                    <button
+                    className="form-button rounded"
                     onClick={()=> signup()}
-                    >test signup</button>
+                    >Signup</button>
                     </div>
                     
                     <button 
