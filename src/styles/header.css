@@ -38,4 +38,10 @@
     background-color: var(--verylight);
     color: var(--verydark);
     font-size: larger;
+    user-select: none;
+}
+
+.logsign-container:active{
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
 }

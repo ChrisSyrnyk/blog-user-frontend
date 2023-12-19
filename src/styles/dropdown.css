@@ -13,9 +13,9 @@
     position: absolute;
     right: 0;
     top: 60px;
-    height: 300px;
-    width: 250px;
-    background-color: var(--light);
+    height: calc(100vh - 120px);
+    width: 300px;
+    background-color: var(--verydark);
 }
 
 .login-form{
@@ -23,14 +23,60 @@
     flex-direction: column;
     position: relative;
     width: 90%;
-    height: 150px;
+    height: 200px;
     margin: auto;
-    background-color: var(--medium);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: var(--light);
 }
 
-.input{
-    width: 80%;
+.logsign-input{
+    width: 90%;
     margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: var(--verydark);
+    border: none;
+    height: 20px;
+    color: var(--verylight);
+}
+
+.logsign-title{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: x-large;
+    color: var(--verydark);
+    user-select: none;
+}
+
+.signup-info{
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--dark);
+    user-select: none;
+}
+
+.logsign-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.form-button{
+    margin: auto;
+    margin-left: 10%;
+    background-color: var(--verylight);
+    border: none;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: var(--verydark);
+    user-select: none;
+}
+
+.form-button:active{
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
 }
