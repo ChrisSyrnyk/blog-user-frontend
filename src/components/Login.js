@@ -18,11 +18,14 @@ const Login = (props) => {
         .then((response) => {
           if(response.message){
             console.log('invalid username or password');
+          } else {
+            console.log(response);
+            localStorage.setItem("token", response.token);
+            document.getElementById('username').value = null;
+            document.getElementById('password').value = null;
+            props.setLogintoggle();
+            window.location.reload();
           }
-          console.log(response);
-          localStorage.setItem("token", response.token);
-          document.getElementById('username').value = null;
-          document.getElementById('password').value = null;
         })
     }
 

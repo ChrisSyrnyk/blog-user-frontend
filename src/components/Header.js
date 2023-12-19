@@ -29,7 +29,7 @@ const Header = (props) => {
                     >Login</div>
                 </div>
             </div>
-            <Login login = {logintoggle}/>
+            <Login login = {logintoggle} setLogintoggle = {setLogintoggle}/>
         </>
     )
     
