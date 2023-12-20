@@ -28,9 +28,8 @@ const Login = (props) => {
         .then((response) => response.json())
         .then((response) => {
           if(response.message){
-            console.log('invalid username or password');
+            document.getElementById('username').value = 'Invalid username or password'
           } else {
-            console.log(response);
             localStorage.setItem("token", response.token);
             localStorage.setItem("userId", response.result._id);
             document.getElementById('username').value = null;

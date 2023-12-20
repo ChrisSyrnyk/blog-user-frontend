@@ -16,9 +16,8 @@ const Signup = (props) => {
         .then((response) => response.json())
         .then((response) => {
           if(response.message){
-            console.log('User already exists'); 
+            document.getElementById('signup-username').value = 'User already exists'
           } else {
-            console.log('account created');
             document.getElementById('signup-username').value = null;
             document.getElementById('signup-password').value = null;
             props.toggleSignup();
