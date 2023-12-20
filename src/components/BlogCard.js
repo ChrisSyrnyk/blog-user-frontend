@@ -19,8 +19,8 @@ const BlogCard = (props) =>{
                                     >{blog.title}</a>
                                     <div className = 'line'/>
                                     <div className='center blog-content'>{blog.content}</div>
-                                    <div className='blog-info'>
-                                        <div className='blog-info'>{blog.username}</div>
+                                    <div className='blog-info-container'>
+                                        <div className='blog-info'>{blog.user.username}</div>
                                         <div className='blog-info'>{convertDate(blog.created)}</div>
                                     </div>
                                 </div>
@@ -41,8 +41,8 @@ const BlogCard = (props) =>{
                                     >{blog.title}</a>
                                     <div className = 'line'/>
                                     <div className='center blog-content'>{blog.content}</div>
-                                    <div className='blog-info'>
-                                        <div className='blog-info'>{blog.username}</div>
+                                    <div className='blog-info-container'>
+                                        <div className='blog-info'>{blog.user.username}</div>
                                         <div className='blog-info'>{convertDate(blog.created)}</div>
                                     </div>
                                 </div>
