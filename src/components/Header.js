@@ -21,7 +21,7 @@ const Header = (props) => {
                 href = '/home-feed'
                 className='title-container'
                 >
-                    The Best Blogs
+                    Culinary Chronicles
                 </a>
                 <div className='logsign-container rounded'>
                     <div
