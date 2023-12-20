@@ -8,6 +8,20 @@
     background-color: var(--verylight);
 }
 
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { 
+    text-decoration: none;
+    color: blue;
+}
+
+
+a:active { text-decoration: none; }
+
 .center{
     position: relative;
     display: flex;
