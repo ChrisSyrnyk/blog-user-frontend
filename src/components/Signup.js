@@ -1,6 +1,8 @@
 const Signup = (props) => {
     
     async function signup(){
+      if(document.getElementById('signup-password').value.length > 0 
+      && document.getElementById('signup-username').value.length){
         fetch('http://localhost:4000/signup', {
           method: "POST",
           mode: "cors",
@@ -16,13 +18,17 @@ const Signup = (props) => {
         .then((response) => response.json())
         .then((response) => {
           if(response.message){
-            document.getElementById('signup-username').value = 'User already exists'
+            document.getElementById('signup-username').placeholder = 'User already exists'
           } else {
             document.getElementById('signup-username').value = null;
             document.getElementById('signup-password').value = null;
             props.toggleSignup();
           }
         })
+      } else {
+        document.getElementById('signup-username').placeholder = "username empty";
+        document.getElementById('signup-password').placeholder = "password empty";
+      }
     }
 
     
