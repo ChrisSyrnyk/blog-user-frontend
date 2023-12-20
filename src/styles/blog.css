@@ -69,3 +69,12 @@
     color: var(--verydark);
 }
 
+.delete-comment{
+    width: 120px;
+    margin: auto;
+    padding: 2px;
+    margin-left: calc(95% - 120px);
+    background-color: var(--medium);
+    color: var(--verylight);
+    border: none;
+}
