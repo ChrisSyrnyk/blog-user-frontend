@@ -32,6 +32,7 @@ const PostComment = (props) =>{
                     <div className='postInfo'>Reply to {props.user}</div>
                     <textarea className="commentInput center rounded"id="createcomment" name="createcomment"></textarea>
                     <button
+                    className='delete-comment rounded'
                     onClick={()=>postComment()}
                     >Submit Reply</button>
                 </div>
