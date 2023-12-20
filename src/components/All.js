@@ -17,10 +17,7 @@ class Top extends Component{
                             <div className='line'/>
                             <div className='all-blogs-card-container center'>
                                 <BlogCard blogs = {this.props.allBlogs}/>
-                            </div>
-                        
-                            
-                            
+                            </div> 
                         </div>
                     </div>
                 </div>
