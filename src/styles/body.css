@@ -39,6 +39,7 @@
     min-height: 300px;
     height: auto;
     width: max(100vw, var(--minwidth));
+    margin-bottom: 60px;
 }
 
 .allblogs-card{
