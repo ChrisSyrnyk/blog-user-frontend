@@ -42,8 +42,9 @@ const PostComment = (props) =>{
             <>
                 <div className='comment-card'>
                     <div className='line'/>
-                    <div className='postInfo'>Login to reply to {props.user}</div>
-                    <div className='logsign-container rounded'>Login</div>
+                    <div className='flexrow'>
+                        <div className='postInfo'>Login to reply to {props.user}</div>
+                    </div>
                 </div>
             </>        
         )
