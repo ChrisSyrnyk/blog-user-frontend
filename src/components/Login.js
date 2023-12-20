@@ -32,6 +32,7 @@ const Login = (props) => {
           } else {
             console.log(response);
             localStorage.setItem("token", response.token);
+            localStorage.setItem("userId", response.result._id);
             document.getElementById('username').value = null;
             document.getElementById('password').value = null;
             props.setLogintoggle();

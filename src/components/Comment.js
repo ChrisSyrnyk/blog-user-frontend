@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import DeleteComment from './DeleteComment';
 
 const Comment = (props) =>{    
  
@@ -18,6 +19,7 @@ const Comment = (props) =>{
                     <div className='commentContent'>{comment.content}</div>
                     <div className='commentInfo'>{comment.user.username}</div>
                     <div className='commentInfo'>{convertDate(comment.created)}</div>
+                    <DeleteComment commentId = {comment._id} userId = {comment.user._id}/>
                 </div>
                 )
             })}
