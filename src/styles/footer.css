@@ -13,7 +13,7 @@
     bottom: 0;
     left: 0;
     height: 60px;
-    width: max(100vw, var(--minwidth));
+    width: 100vw;
     background-color: var(--dark);
 }
 
