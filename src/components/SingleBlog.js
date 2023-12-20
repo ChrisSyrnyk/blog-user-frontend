@@ -7,7 +7,7 @@ const SingleBlog = (props) =>{
     
     const [blogPostId, setBlogPostId] = useState(window.location.href.split('/')[4]);
     const [blogPost, setBlogPost] = useState(getBlogPost);
-    const [Comments, setComments] = useState(getBlogPost);
+    const [Comments, setComments] = useState(null);
 
     function getBlogPost(){
         fetch('http://localhost:4000/blogposts/' + blogPostId)
