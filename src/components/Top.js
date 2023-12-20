@@ -17,7 +17,7 @@ class Top extends Component{
                     <div className='top-blogs'>
                         <div className='center'>
                             <div className='top-blogs-container'>
-                                <div className='center blogs-title'>Most Recent Blogs</div>
+                                <div className='center blogs-title'>Most Recent Chronicles</div>
                                 <div className='line'/>
                                 <BlogCardContainer cardtype = {'topcard'} Blogs = {
                                     this.props.allBlogs.sort((a, b) => {
