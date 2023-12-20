@@ -70,17 +70,7 @@ const Login = (props) => {
                     >Login</button>
                     </div>
 
-                    <Signup signup = {signupToggle} toggleSignup = {toggleSignup}/>
-
-                    <button 
-                    onClick={()=>console.log(localStorage.getItem("token"))}
-                    className='input'
-                    >view token</button>
-                    <button
-                    onClick={()=>localStorage.removeItem("token")}
-                    >remove token</button>
-
-                    
+                    <Signup signup = {signupToggle} toggleSignup = {toggleSignup}/>      
                 </div>
             </>
         )
