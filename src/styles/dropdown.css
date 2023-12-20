@@ -10,7 +10,7 @@
 
 
 .dropdown-container{
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 60px;
     height: calc(100vh - 120px);
