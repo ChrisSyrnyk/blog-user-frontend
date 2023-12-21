@@ -15,7 +15,6 @@ const SingleBlog = (props) =>{
         .then((blogpost) => {
           setBlogPost(blogpost.blog_post);
           setComments(blogpost.comments);
-          console.log('ran');
         })
       }
 
