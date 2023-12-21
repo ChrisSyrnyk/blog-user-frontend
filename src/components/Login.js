@@ -70,7 +70,7 @@ const Login = (props) => {
                     >Login</button>
                     </div>
 
-                    <Signup signup = {signupToggle} toggleSignup = {toggleSignup}/>      
+                    <Signup signup = {signupToggle} toggleSignup = {toggleSignup}/>   
                 </div>
             </>
         )
