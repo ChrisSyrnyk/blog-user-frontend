@@ -3,7 +3,7 @@
 
 
 # Goals
-- Create an API only backend allowing for multiple front-end clients. This front-end client allows users to create and delete comments on blog posts. 
+- Create an API only backend allowing for multiple front-end clients. This front-end client allows users view blogs, create, and delete comments on blog posts. 
 - Implementation of REST API's
 - Use of JamStack architecture to decouple back-end from front-end
 - Utilization of JWT for authentication 
