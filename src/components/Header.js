@@ -24,7 +24,7 @@ const Header = (props) => {
                 <>
                     <div className='header-container'>
                         <a 
-                        href = '/'
+                        href = '/blog-user-frontend'
                         className='title-container'
                         >
                             Culinary Chronicles
