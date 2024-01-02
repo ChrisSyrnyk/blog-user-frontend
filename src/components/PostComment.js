@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 const PostComment = (props) =>{   
     
     async function postComment(){
-        fetch('http://localhost:4000/comments/comment', {
+        fetch('https://heathered-nasal-cappelletti.glitch.me/comments/comment', {
           method: "POST",
           mode: "cors",
           headers: {

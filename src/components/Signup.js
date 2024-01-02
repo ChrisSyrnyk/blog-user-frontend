@@ -3,7 +3,7 @@ const Signup = (props) => {
     async function signup(){
       if(document.getElementById('signup-password').value.length > 0 
       && document.getElementById('signup-username').value.length){
-        fetch('http://localhost:4000/signup', {
+        fetch('https://heathered-nasal-cappelletti.glitch.me/signup', {
           method: "POST",
           mode: "cors",
           headers: {

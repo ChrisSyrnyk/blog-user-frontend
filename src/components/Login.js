@@ -14,7 +14,7 @@ const Login = (props) => {
     }
 
     async function login(){
-        fetch('http://localhost:4000/login', {
+        fetch('https://heathered-nasal-cappelletti.glitch.me/login', {
           method: "POST",
           mode: "cors",
           headers: {

@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 const DeleteComment = (props) =>{       
     
     async function deleteComment(){
-        fetch('http://localhost:4000/comments/' + props.commentId, {
+        fetch('https://heathered-nasal-cappelletti.glitch.me/comments/' + props.commentId, {
           method: "DELETE",
           mode: "cors",
           headers: {

@@ -20,7 +20,7 @@ function App() {
   const [allBlogs, setallBlogs] = useState(()=>{getBlogPosts()});
 
   function getBlogPosts(){
-    fetch('http://localhost:4000/blogposts')
+    fetch('https://heathered-nasal-cappelletti.glitch.me/blogposts')
     .then((response) => response.json())
     .then((blogpost) => {
       setallBlogs(blogpost);

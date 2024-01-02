@@ -10,7 +10,7 @@ const SingleBlog = (props) =>{
     const [Comments, setComments] = useState(null);
 
     function getBlogPost(){
-        fetch('http://localhost:4000/blogposts/' + blogPostId)
+        fetch('https://heathered-nasal-cappelletti.glitch.me/blogposts/' + blogPostId)
         .then((response) => response.json())
         .then((blogpost) => {
           setBlogPost(blogpost.blog_post);
