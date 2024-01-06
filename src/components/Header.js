@@ -34,6 +34,8 @@ const Header = (props) => {
                             onClick={()=>toggleLogin()}
                             >Login</div>
                         </div>
+                        <a
+                        href="/test">test page</a>
                     </div>
                     <Login login = {logintoggle} setLogintoggle = {setLogintoggle} isLoggedIn = {isLoggedIn}/>
                 </>

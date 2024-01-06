@@ -13,8 +13,8 @@ const SingleBlog = (props) =>{
         fetch('https://heathered-nasal-cappelletti.glitch.me/blogposts/' + blogPostId)
         .then((response) => response.json())
         .then((blogpost) => {
-          setBlogPost(blogpost.blog_post);
-          setComments(blogpost.comments);
+        setBlogPost(blogpost.blog_post);
+        setComments(blogpost.comments);
         })
       }
 
