@@ -1,9 +1,11 @@
 # Blog Project (Front-end)
-- links will be included here once the project is live.
+- Culinary Chronicles is a blogging web application containing culinary poems created by openAI. This is the front end client allowing users to view these culinary poems. Create an account to comment on your favorite culinary poems. 
+
+[View Project](https://culinary-chronicles.onrender.com)
 
 
 # Goals
-- Create an API only backend allowing for multiple front-end clients. This front-end client allows users view blogs, create, and delete comments on blog posts. 
+- Create an API only backend allowing for multiple front-end clients. This front-end client allows users to view blogs, create, and delete comments on blog posts. 
 - Implementation of REST API's
 - Use of JamStack architecture to decouple back-end from front-end
 - Utilization of JWT for authentication 
