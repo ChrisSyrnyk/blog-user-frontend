@@ -16,7 +16,7 @@ import Body from './components/Body';
 
 function App() {
 
-  
+  const [loggedIn, setLoggedIn] = useState(false);
   const [allBlogs, setallBlogs] = useState(()=>{getBlogPosts()});
 
   function getBlogPosts(){
@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <Body allBlogs = {allBlogs}/>
-      <Header/>
+      <Header setLoggedIn = {setLoggedIn}/>
       <Footer/>
     </>
   );

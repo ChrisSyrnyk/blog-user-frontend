@@ -15,10 +15,12 @@ import SingleBlog from '../components/SingleBlog';
 
 const BlogPost = () => {
 
+    const [loggedIn, setLoggedIn] = useState(false);
+
     return(
         <>
             <SingleBlog/>
-            <Header/>
+            <Header setLoggedIn = {setLoggedIn}/>
             <Footer/>
         </>
     )

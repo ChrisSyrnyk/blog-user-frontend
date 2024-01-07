@@ -37,7 +37,7 @@ const Login = (props) => {
             document.getElementById('username').value = null;
             document.getElementById('password').value = null;
             props.setLogintoggle();
-            window.location.reload();
+            props.setLoggedIn(true);
           }
         })
     }

@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Login from './Login';
 
 const Header = (props) => {
 
     const [logintoggle, setLogintoggle] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("token"));
+
+    useEffect(() => {
+        // This effect uses the `value` variable,
+        // so it "depends on" `value`.
+        setIsLoggedIn(localStorage.getItem("token"))
+      }, [logintoggle])  // pass `value` as a dependency
     
     function logout(){
         localStorage.removeItem("token");
@@ -35,7 +41,7 @@ const Header = (props) => {
                             >Login</div>
                         </div>
                     </div>
-                    <Login login = {logintoggle} setLogintoggle = {setLogintoggle} isLoggedIn = {isLoggedIn}/>
+                    <Login login = {logintoggle} setLogintoggle = {setLogintoggle} isLoggedIn = {isLoggedIn} setLoggedIn = {props.setLoggedIn}/>
                 </>
             )
         } else {
