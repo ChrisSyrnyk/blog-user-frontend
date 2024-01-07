@@ -15,11 +15,6 @@ const BlogCard = (props) =>{
                                 <div 
                                 key = {blog._id}
                                 className='blog-card'>
-                                    {/*
-                                    <a className='center blog-title'
-                                    href = {"/blog-post/" + blog._id}
-                                    >{blog.title}</a>
-                                    */}
                                     <Link className = "center blog-title" to = {"/blog-post/" + blog._id}>
                                         {blog.title}
                                     </Link>
@@ -42,9 +37,9 @@ const BlogCard = (props) =>{
                                 <div 
                                 key = {blog._id}
                                 className='allblogs-card'>
-                                    <a className='center blog-title'
-                                    href = {"/blog-post/" + blog._id}
-                                    >{blog.title}</a>
+                                    <Link className = "center blog-title" to = {"/blog-post/" + blog._id}>
+                                        {blog.title}
+                                    </Link>
                                     <div className = 'line'/>
                                     <div className='center blog-content'>{blog.content}</div>
                                     <div className='blog-info-container'>
