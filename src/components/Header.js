@@ -14,7 +14,9 @@ const Header = (props) => {
     
     function logout(){
         localStorage.removeItem("token");
-        window.location.reload();
+        //remove window reload
+        setIsLoggedIn(null);
+        props.setLoggedIn(false);
     }
     
     function toggleLogin(){
