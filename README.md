@@ -3,6 +3,8 @@
 
 [View Project](https://culinary-chronicles.onrender.com)
 
+[View Backend Code](https://github.com/ChrisSyrnyk/blog-backend)
+
 
 # Goals
 - Create an API only backend allowing for multiple front-end clients. This front-end client allows users to view blogs, create, and delete comments on blog posts. 
