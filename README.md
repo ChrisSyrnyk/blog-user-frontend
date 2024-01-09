@@ -1,10 +1,10 @@
 # Blog Project (Front-end)
 - Culinary Chronicles is a blogging web application containing culinary poems created by openAI. This is the front end client allowing users to view these culinary poems. Create an account to comment on your favorite culinary poems. 
 
-[View Project](https://culinary-chronicles.onrender.com)
+- [View Project](https://culinary-chronicles.onrender.com)
+- [View Backend Code](https://github.com/ChrisSyrnyk/blog-backend)
 
-[View Backend Code](https://github.com/ChrisSyrnyk/blog-backend)
-
+![Display Photo](src/img/CulinaryChronicles.png)
 
 # Goals
 - Create an API only backend allowing for multiple front-end clients. This front-end client allows users to view blogs, create, and delete comments on blog posts. 
