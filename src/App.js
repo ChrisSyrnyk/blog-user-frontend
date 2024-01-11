@@ -19,6 +19,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [allBlogs, setallBlogs] = useState(()=>{getBlogPosts()});
 
+
   function getBlogPosts(){
     fetch('https://heathered-nasal-cappelletti.glitch.me/blogposts')
     .then((response) => response.json())
@@ -27,9 +28,7 @@ function App() {
     })
   }
 
-
-  
-  
+  if (allBlogs){
   return (
     <>
       <Body allBlogs = {allBlogs}/>
@@ -37,6 +36,21 @@ function App() {
       <Footer/>
     </>
   );
+  } else {
+    return(
+    <>
+      <Header setLoggedIn = {setLoggedIn}/>
+      <div className='loading'>
+        <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
+      </div>
+      <div className='loadingtext'>
+        <div className='connecting'>Connecting</div>
+      </div>
+      <Footer/>
+    </>
+    )
+  }
+  
 }
 
 export default App;
